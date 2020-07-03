@@ -18,7 +18,7 @@ class Core
 
             // Verifica se o arquivo existe na pasta controller
             if(file_exists('app/controllers/'.$controllerName.'.php')){
-           
+                $controllerName = '\\MVC2020\\Controllers\\'.$controllerName;
                 $controller = new $controllerName();
                 // 2.1. Metodo
                 if(!empty($token)){
@@ -48,9 +48,12 @@ class Core
  
 
         //ERROR PAGE
-
- 
-
+        if($flag)
+        {
+            $controllerName = '\\MVC2020\\Core\\Page404';
+            $controller = new $controllerName();
+            $controller->index();
+        }
     }
 }
  

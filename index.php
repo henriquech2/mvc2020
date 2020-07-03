@@ -15,5 +15,6 @@ new \MVC2020\Core\Core;
 
 //echo date("h:i:sa");
 //debug(explode('/',rtrim($_GET['path'],'/')));
+
 ?>
 

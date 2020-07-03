@@ -2,10 +2,10 @@
 
 namespace MVC2020\Controllers;
 
-class Home
+class Teste
 {
     public function index()
     {
-        echo "Opa, chegamos aqui CONTROLLERS HOME";
+        echo "Teste CONTROLLERS ";
     }
 }
